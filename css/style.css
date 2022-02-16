@@ -46,7 +46,37 @@ canvas {
     font-family: 'Press Start 2P', cursive;
     color: #fff;
     text-align: center;
+    transition: all .2s ease-in-out;
+    font-size: 4rem;
+    word-spacing: -2rem;
 }
+
+.hero h1:hover {
+    transform: scale(1.4);
+    background: linear-gradient(to right, #FFF 20%, rgb(255, 0, 212) 40%, rgb(233, 255, 36) 60%, #FFF 80%);
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1s linear infinite;
+}
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  .car {
+    width: 30%;
+  }  
+
+  .hero:hover + .car {
+    width: 50%;
+  }
+
 
 
 .star {
